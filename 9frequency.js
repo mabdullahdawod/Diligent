@@ -8,16 +8,16 @@
 
 
 const arr = ['banana', 'cherry', 'orange', 'apple', 'cherry', 'orange', 'apple', 'banana', 'cherry', 'orange', 'fig'];
-const add = {};
+const counts = {};
 for(let a=0; a<arr.length; a++)
 {
-    if(arr[a] in add)
+    if(arr[a] in counts)
     {
-    counts[add[a]]=add[add[a]]+1;
+    counts[arr[a]]=counts[arr[a]]+1;
     }
     else
     {
-    counts[add[a]]=1;
+    counts[arr[a]]=1;
     }
 }
-console.log(add);
+console.log(counts);
