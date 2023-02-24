@@ -20,11 +20,8 @@ let adderr={};
 
 for(let i=0; i<Products.length; i++)
 {   
-    adderr[Products[0]]=productPrices[0]; 
+    adderr[Products[i]]=productPrices[i]; 
 }
- console.log(counts);
-
-
 for(let j=0; j < productSold.length; j++)
 {
 if(adderr[productSold[j]] !== soldPrice[j])
